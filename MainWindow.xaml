@@ -1,0 +1,27 @@
+﻿<Window x:Class="Task6_7_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task6_7_"
+        mc:Ignorable="d"
+        Title="Главное меню" Height="700" Width="1150">
+    <Grid x:Name="Grid">
+        <Label FontSize="20" Content="Покупатели" HorizontalAlignment="Left" Height="33" Margin="166,3,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label FontSize="20" Content="Поставщики" HorizontalAlignment="Left" Height="33" Margin="518,3,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label FontSize="20" Content="Заказы" HorizontalAlignment="Left" Height="33" Margin="901,3,0,0" VerticalAlignment="Top" Width="76"/>
+        <DataGrid  x:Name="DataCust" HorizontalAlignment="Left" Height="233" Margin="77,36,0,0" VerticalAlignment="Top" Width="300"/>
+        <DataGrid x:Name="DataProv" HorizontalAlignment="Left" Height="233" Margin="429,36,0,0" VerticalAlignment="Top" Width="300"/>
+        <DataGrid x:Name="DataOrd" HorizontalAlignment="Left" Height="233" Margin="789,36,0,0" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="BtCustUpdate" FontSize="20" Content="Обновить" HorizontalAlignment="Left" Height="48" Margin="148,310,0,0" VerticalAlignment="Top" Width="158" Click="BtCustUpdate_Click"/>
+        <Button x:Name="BtCustAdd" FontSize="20" Content="Добавить" HorizontalAlignment="Left" Height="48" Margin="148,415,0,0" VerticalAlignment="Top" Width="158" Click="BtCustAdd_Click"/>
+        <Button x:Name="BtCustDelete" FontSize="20" Content="Удалить" HorizontalAlignment="Left" Height="48" Margin="148,511,0,0" VerticalAlignment="Top" Width="158" Click="BtCustDelete_Click"/>
+        <Button x:Name="BtProvUpdate" FontSize="20" Content="Обновить" HorizontalAlignment="Left" Height="48" Margin="500,310,0,0" VerticalAlignment="Top" Width="158" Click="BtProvUpdate_Click"/>
+        <Button x:Name="BtProvAdd" FontSize="20" Content="Добавить" HorizontalAlignment="Left" Height="48" Margin="500,415,0,0" VerticalAlignment="Top" Width="158" Click="BtProvAdd_Click"/>
+        <Button x:Name="BtProvDelete" FontSize="20" Content="Удалить" HorizontalAlignment="Left" Height="48" Margin="500,511,0,0" VerticalAlignment="Top" Width="158" Click="BtProvDelete_Click"/>
+        <Button x:Name="BtOrdUpdate" FontSize="20" Content="Обновить" HorizontalAlignment="Left" Height="48" Margin="860,310,0,0" VerticalAlignment="Top" Width="158" Click="BtOrdUpdate_Click"/>
+        <Button x:Name="BtOrdAdd" FontSize="20" Content="Добавить" HorizontalAlignment="Left" Height="48" Margin="860,415,0,0" VerticalAlignment="Top" Width="158" Click="BtOrdAdd_Click"/>
+        <Button x:Name="BtOrdDelete" FontSize="20" Content="Удалить" HorizontalAlignment="Left" Height="48" Margin="860,511,0,0" VerticalAlignment="Top" Width="158" Click="BtOrdDelete_Click"/>
+        <Button x:Name="BtExit" FontSize="20" Content="Выход" HorizontalAlignment="Left" Height="48" Margin="500,610,0,0" VerticalAlignment="Top" Width="158" Click="BtExit_Click"/>
+    </Grid>
+</Window>
